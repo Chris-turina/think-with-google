@@ -17,6 +17,7 @@ body {
 
 .container {
   height: 100vh;
+  padding: 15px;
 }
 
 .heading {
@@ -95,6 +96,7 @@ body {
   height: 100px;
   margin-bottom: 10px;
   background-color: #fff;
+  box-shadow: 1px 1px 1px lightgrey;
 }
 
 .content-img {
@@ -270,6 +272,8 @@ body {
     width: 10vw;
     height:300px;
     flex-grow: 2;
+    margin: 3px;
+
   }
 
   .content-img {
@@ -372,6 +376,7 @@ body {
   .content-2 {
     width: 20%;
     height: 300px;
+    flex-direction: column;
   }
 
   .footer-title {
