@@ -5,7 +5,7 @@
 }
 
 .dashed {
-  border:1px solid #000;
+  border:1px solid #F3F3F3;
 }
 
 /* End for testing */
@@ -94,11 +94,33 @@ body {
   display: flex;
   height: 100px;
   margin-bottom: 10px;
+  background-color: #fff;
 }
 
 .content-img {
   width: 150px;;
   height: 100%;
+  min-width: 150px;
+}
+
+.content-img-one {
+  background-image: url(../img/mobile-landing.jpg);
+  background-size: cover;
+}
+
+.content-img-two {
+  background-image: url(../img/groupon.jpg);
+  background-size: cover;
+}
+
+.content-img-three {
+  background-image: url(../img/mag-bar.jpg);
+  background-size: cover;
+}
+
+.content-img-four {
+  background-image: url(../img/guy1-2.jpg);
+  background-size: cover;
 }
 
 .content-text {
@@ -126,23 +148,48 @@ body {
 
 .deeper-dive {
   margin-bottom: 20px;
+  background-color: #F9F9F9;
+}
+
+.deeper-dive h2 {
+  color: #484848;
 }
 
 .marketing-resources {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  color: #484848;
 }
 
-.marketing-resources {
-  margin-bottom: 10px;
+.marketing-resources p {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #3F6BD4;
 }
 
 .advertising-channels {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
+  color: #484848;
+}
+
+.advertising-channels p {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #3F6BD4;
 }
 
 .consumer-insights {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
+  color: #484848;
+}
+
+#consumer-insights {
+  color: #3F6BD4;
 }
 
 .content-2 {
@@ -154,6 +201,27 @@ body {
 .content2-img {
   width: 150px;;
   height: 100%;
+  min-width: 150px;
+}
+
+.content2-img-one {
+  background-image: url(../img/usa.png);
+  background-size: cover;
+}
+
+.content2-img-two {
+  background-image: url(../img/consumer.png);
+  background-size: cover;
+}
+
+.content2-img-three {
+  background-image: url(../img/rasing-bars.png);
+  background-size: cover;
+}
+
+.content2-img-four {
+  background-image: url(../img/display1.png);
+  background-size: cover;
 }
 
 .content2-text {
@@ -222,44 +290,32 @@ body {
     width: 100vw;
   }
 
-  /*.row-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }*/
-
   .big-two {
     width: 100vw;
   }
 
-  .flex-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /*align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-content: flex-end;
-    justify-content: space-around;*/
+  .content-2 {
+    flex-direction: column;
+    width: 10vw;
+    height:300px;
+    flex-grow: 2;
   }
 
-  .content-2 {
+  .content2-img {
+    width: 100%;
+  }
 
-    width: 45vw;
-    height:300px;
-    /*flex-grow: 2;*/
+  .content2-text {
+    text-align: center;
   }
 
   .flex-box-2 {
     display: flex;
     flex-wrap: wrap;
   }
-.footer-back {
-  width: 100vw;
-
-}
+  .footer-back {
+    width: 100vw;
+  }
 
   .footer {
     width: 70%;
@@ -274,14 +330,21 @@ body {
     justify-content: space-around;
   }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .bigbox {
     width: 50%;
   }
 
   .content {
-    width: 20%;
-    height: 300px;
     flex-direction: column;
+    width: 10vw;
+    height:300px;
+    flex-grow: 2;
   }
 
   .content-img {
