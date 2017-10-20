@@ -69,6 +69,11 @@
 }
 
 .marketing-resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketing-resources {
   margin-bottom: 10px;
 }
 
@@ -80,9 +85,9 @@
   margin-bottom: 10px;
 }
 
-.marketing-resources {
-  display: flex;
-  flex-direction: column;
+.content-2 {
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 .footer-title {
@@ -103,23 +108,47 @@
   .content {
     width: 10vw;
     height:300px;
+    flex-grow: 2;
   }
 
   .row-1 {
     display: flex;
-    flex-grow: 1
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .row-1:first-child {
-    flex-grow: 2;
+  .big-one {
+    width: 100vw;
+  }
+
+  .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .big-two {
+    width: 100vw;
   }
 
   .flex-box {
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: row;*/
-    /*justify-content: space-around;*/
+    justify-content: space-around;
+    /*align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    justify-content: space-around;*/
+  }
+
+  .content-2 {
+
+    width: 45vw;
+    height:300px;
+    /*flex-grow: 2;*/
   }
 
   .flex-box-2 {
@@ -139,9 +168,6 @@
 }
 
 @media screen and (min-width:1001px) {
-  .row-1 {
-    display: flex;
-    /*flex-grow: */
-  }
+  
 
 }
