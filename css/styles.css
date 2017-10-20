@@ -29,6 +29,7 @@
   float: left;
   height: 50%;
   width: 30px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 
@@ -36,13 +37,31 @@
   float: left;
   height: 50%;
   width: 200px;
+  margin-top: 15px;
   margin-left: 10px;
+  display: flex;
+}
+
+.think-text {
+  margin-top: 0;
+  margin-right: 3px;
+  padding: 0;
+  color: grey;
+  font-size: 25px;
+
+}
+
+.google {
+  float: left;
+  padding: 0;
+  width: 45%;
 }
 
 .magnifying-glass {
   float: right;
   height: 50%;
-  width: 30px;
+  width: 40px;
+  margin-top: 15px;
   margin-right: 10px;
 }
 
@@ -52,12 +71,30 @@
 }
 
 .content {
+  display: flex;
   height: 100px;
   margin-bottom: 10px;
 }
 
-.big-two {
+.content-img {
+  /*display: ;*/
+  width: 150px;;
+  height: 100%;
+}
 
+.content-text {
+  padding-left: 5px;
+  /*display: inline;*/
+
+}
+
+.content-text-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content-text-date {
+  color: grey;
 }
 
 #row-2 {
@@ -106,9 +143,18 @@
 @media screen and (min-width:601px) and (max-width:1000px) {
 
   .content {
+    flex-direction: column;
     width: 10vw;
     height:300px;
     flex-grow: 2;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-text {
+    text-align: center;
   }
 
   .row {
@@ -180,6 +226,15 @@
   .content {
     width: 20%;
     height: 300px;
+    flex-direction: column;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-text {
+    text-align: center;
   }
 
   .flex-box-2 {
