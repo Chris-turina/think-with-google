@@ -1,15 +1,19 @@
 /* For testing only */
 
 *:not(body):not(html) {
-  box-sizing:border-box;
 
 }
 
 .dashed {
-  border:1px dashed #000;
+  border:1px solid #000;
 }
 
 /* End for testing */
+
+body {
+  background-color: #F3F3F3;
+  box-sizing:border-box;
+}
 
 .container {
   height: 100vh;
@@ -65,9 +69,25 @@
   margin-right: 10px;
 }
 
+.insight {
+  font-size: 30px;
+  color: #484848;
+}
+
 .bigbox {
   height: 300px;
   margin-bottom: 10px;
+}
+
+.big-one {
+  background-image: url(../img/guest.jpg);
+  background-size: cover;
+
+}
+
+.bigbox-text {
+  color: #ffffff;
+  margin-top: 220px;
 }
 
 .content {
@@ -77,14 +97,12 @@
 }
 
 .content-img {
-  /*display: ;*/
   width: 150px;;
   height: 100%;
 }
 
 .content-text {
   padding-left: 5px;
-  /*display: inline;*/
 
 }
 
@@ -99,6 +117,11 @@
 
 #row-2 {
   .margin-bottom: 20px;
+}
+
+.big-two {
+  background-image: url(../img/person-ipad.jpg);
+  background-size: cover;
 }
 
 .deeper-dive {
@@ -123,8 +146,40 @@
 }
 
 .content-2 {
+  display: flex;
   height: 100px;
   margin-bottom: 10px;
+}
+
+.content2-img {
+  width: 150px;;
+  height: 100%;
+}
+
+.content2-text {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+
+}
+
+.content2-text-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.content2-text-content {
+  color: grey;
+  margin: 0;
+}
+
+.open {
+  display: flex;
+  flex-direction: row;
+}
+
+.open p {
+  margin-right: 10px;;
 }
 
 .footer-title {
