@@ -46,11 +46,102 @@
   margin-right: 10px;
 }
 
-.guest-editor {
+.bigbox {
   height: 300px;
   margin-bottom: 10px;
 }
 
 .content {
-  
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.big-two {
+
+}
+
+.row-2 {
+  .margin-bottom: 20px;
+}
+
+.deeper-dive {
+  margin-bottom: 20px;
+}
+
+.marketing-resources {
+  margin-bottom: 10px;
+}
+
+.advertising-channels {
+  margin-bottom: 10px;
+}
+
+.consumer-insights {
+  margin-bottom: 10px;
+}
+
+.marketing-resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  margin: 20px, 0, 20px, 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-footer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+
+  .content {
+    width: 10vw;
+    height:300px;
+  }
+
+  .row-1 {
+    display: flex;
+    flex-grow: 1
+    /*flex-wrap: wrap;*/
+  }
+
+  .row-1:first-child {
+    flex-grow: 2;
+  }
+
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+  }
+
+  .flex-box-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.footer-back {
+  width: 100vw;
+
+}
+
+  .footer {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:1001px) {
+  .row-1 {
+    display: flex;
+    /*flex-grow: */
+  }
+
 }
